@@ -1,5 +1,3 @@
-import { Radar } from "lucide-react";
-
 interface SponsorProps {
   icon: JSX.Element;
   name: string;
@@ -7,39 +5,22 @@ interface SponsorProps {
 
 const sponsors: SponsorProps[] = [
   {
-    icon: <Radar size={34} />,
-    name: "Sponsor 1",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 2",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 3",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 4",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 5",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 6",
+    icon: (
+      <img
+        src="https://koishi.chat/logo.png"
+        alt="sponsor"
+        className="w-8 h-8"
+      />
+    ),
+    name: "Koishi",
   },
 ];
 
 export const Sponsors = () => {
   return (
-    <section
-      id="sponsors"
-      className="container pt-24 sm:py-32"
-    >
+    <section id="sponsors" className="container pt-24 sm:py-32">
       <h2 className="text-center text-md lg:text-xl font-bold mb-8 text-primary">
-        Investors and founders
+        赞助商
       </h2>
 
       <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
